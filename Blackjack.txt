@@ -1,0 +1,108 @@
+#include <iostream>
+#include <time.h>
+#include <stdlib.h> 
+
+using namespace std;
+
+int card1, card2, card3, card4;
+int cardTotal = card1 + card2 + card3 + card4;
+int choice;
+int hand;
+string playerName;
+float bet;
+int bustometer = 21;
+float funds = 20;
+
+void menu()
+{
+    cout << "Welcome to blackjack 2020 'corona edition'" << endl;
+    cout << "\npress any button to begin playing" << end
+}
+
+void gameSetup()
+    {
+        cout << please enter your name" << endl;
+        cin >> playerName;
+        cout << "your starting funds are $20"
+    }
+
+void Deal()
+{
+    srand (time(null));
+    card1 = rand() % 11 + 1;
+    card2 = rand() % 11 + 1;
+    return;
+}
+void Stand ()
+{
+
+}
+
+DoubleDown()
+{
+
+}
+
+void Hit()
+{
+     
+}
+
+void Split()
+{
+
+}
+void playerTurn()
+{
+    cout << "How much would you like to bet?" << endl;
+    cin >> bet;
+    funds -= bet;
+    cout << "remaining funds: " << funds << endl;
+    deal();
+    cout << "your first card is: " << card1 << endl;
+    cout << "your second card is: " << card2 << endl;
+    cout << "your card total is: " << cardTotal << endl;
+    cout << "Would you like to Hit, Stand, Double Down, or Surrender?" << endl;
+    Cout << "Press 1 to Hit\nPress 2 to Stand\nPress 3 to Double Down\nPress 4 to Surrender" << endl;
+    cin >> choice;
+
+     switch(choice)
+    {
+         case 1:
+            Hit();
+
+            break;
+
+        case 2:
+            Stand();
+            break;
+
+        case 3:
+            DoubleDown();
+            break;
+
+        case 4:
+            Surrender();
+            break;
+    }
+    cin.get()
+
+       if (cardTotal>21)
+            youLose()
+
+       else if (cardTotal==21)
+            youWin()    
+}
+
+void Game()
+{
+    gameSetup()
+    dealerTurn()
+    playerTurn()
+
+} 
+
+void main()
+{
+
+}
